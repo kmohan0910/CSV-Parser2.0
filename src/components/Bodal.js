@@ -5,10 +5,8 @@ import Modal from 'react-bootstrap/Modal'
 import './Bodal.css'
 import Basic from './Dragdrop'
 import Table from 'react-bootstrap/Table'
-
-
 import {useEffect} from 'react'
-
+import Compo from './compo'
 
 
 const Bodal=()=>{
@@ -21,13 +19,19 @@ const Bodal=()=>{
   const [columndata,handladd]=useState(["FirstName","Last Name","Email"])
   const [value,setvalue]=useState("")
   let firstname=[]
+  const array1={
+    0:[],
+    1:[],
+    2:[],
+    3:[]
+  }
   let lastname=[]
   let email=[]
   const [noofcol,setcol]=useState([0,1,2])
 
 const setinput1=(myvalue,index,index1)=>{
- firstname.splice(index,1,myvalue)
- console.log(myvalue)
+array1[index].splice(index1,1,myvalue)
+ console.log(array1)
 
 }
 
@@ -58,13 +62,17 @@ const setinput1=(myvalue,index,index1)=>{
         <div>
           
            <Button variant="primary" onClick={handleShow}>   Upload CSV     </Button>
-
-            <Modal  dialogClassName="modal-90w" show={show} onHide={handleClose}>
+            {show?<Compo columndata1={columndata}/>:''}
+            {/* <Modal  dialogClassName="modal-90w" show={show} onHide={handleClose}>
             <Modal.Header closeButton>
              <Modal.Title>Add Records</Modal.Title>
             </Modal.Header>
             <Modal.Body> 
             <Basic/>
+
+
+
+
            <h2>....or Manually update data</h2>
            
            <Table striped bordered hover>
@@ -99,11 +107,11 @@ const setinput1=(myvalue,index,index1)=>{
                   )
                   })
               }
- </tbody>
+           </tbody>
 
             </Table>
             <input className="add-input" onChange={(e)=>setvalue(e.target.value)}></input>
-        <button  class="hello" onClick={handleadd}>Add Column</button>
+            <button  class="hello" onClick={handleadd}>Add Column</button>
               </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -113,7 +121,7 @@ const setinput1=(myvalue,index,index1)=>{
             Proceed
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
             </div>
         )
     }
