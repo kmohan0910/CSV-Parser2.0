@@ -63,7 +63,7 @@ const Compo=({columndata1})=>{
 
          <Modal  dialogClassName="modal-90w" show={show} onHide={handleClose}>
          <Modal.Header closeButton>
-          <Modal.Title>Add Records</Modal.Title>
+          <Modal.Title><h4>Add Bulk Records</h4></Modal.Title>
          </Modal.Header>
          <Modal.Body> 
          <Basic columndata={columndata}/>
@@ -71,12 +71,12 @@ const Compo=({columndata1})=>{
 
 
 
-        <h2>....or Manually update data</h2>
+        <h2>....or just manually add data here :</h2>
         
         <Table striped bordered hover>
        <thead>
          <tr>
-         <th>SNo</th>
+         {/* <th>SNo</th> */}
               {columndata.map((attr,index)=>{
                 return(<th>{columndata[index]}</th>)
              
@@ -94,7 +94,7 @@ const Compo=({columndata1})=>{
              //   <td><input type="text"onChange={(e)=>handleemail(e.target.value,index)}></input></td>
              //  </tr>
              <tr>
-               <td>{index+1}</td>
+               {/* <td>{index+1}</td> */}
                {
                  noofcol.map((attr,index1)=>{
                    return <td><input onChange={(e)=>setinput1(e.target.value,index,index1)}></input></td>
@@ -112,9 +112,9 @@ const Compo=({columndata1})=>{
          <button  class="hello" onClick={handleadd}>Add Column</button>
            </Modal.Body>
      <Modal.Footer>
-       <Button variant="secondary" onClick={handleClose}>
+       {/* <Button variant="secondary" onClick={handleClose}>
          Close
-       </Button>
+       </Button> */}
        <Button variant="primary" onClick={handleClose}>
          Proceed
        </Button>

@@ -61,7 +61,7 @@ array1[index].splice(index1,1,myvalue)
  return (
         <div>
           
-           <Button variant="primary" onClick={handleShow}>   Upload CSV     </Button>
+           <Button variant="primary" className="hi" onClick={handleShow}>   Upload CSV     </Button>
             {show?<Compo columndata1={columndata}/>:''}
             {/* <Modal  dialogClassName="modal-90w" show={show} onHide={handleClose}>
             <Modal.Header closeButton>
