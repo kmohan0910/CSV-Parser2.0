@@ -55,8 +55,6 @@ console.log(columndata)
         <p>You can upload any .csv, .tsv file with any set of columns as long as it has 1 record per row. The next step will allow you to match your spreadsheet columns to the right data points. You'll be able to clean up or remove any corrupted data before finalizing your report.</p>
       </div>
       <aside>
-        <h4>Selected File</h4>
-        <ul></ul>
       </aside>
     </section>
   );
