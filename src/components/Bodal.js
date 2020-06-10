@@ -16,7 +16,7 @@ const Bodal=()=>{
   const handleShow = () => setShow(true);
   const [inputfield,setinput]=useState([0,1,2,3])
   const tablecoloums=[0,1,2]
-  const [columndata,handladd]=useState(["FirstName","Last Name","Email"])
+  const [columndata,handladd]=useState(["Email","FirstName","Last Name"])
   const [value,setvalue]=useState("")
   let firstname=[]
   const array1={

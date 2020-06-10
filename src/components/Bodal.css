@@ -91,7 +91,7 @@ padding: 5px;
 line-height: 1.43;
 font-size: 14px;
 font-weight: 500;
-color: #071c26;
+color: #5858e0;
 text-overflow: ellipsis;
 -webkit-appearance: none;
 -moz-appearance: none;
@@ -99,14 +99,11 @@ appearance: none;
 transition: all .3s;
 color: #fff;
 margin-left: 10px;
-background-color: #282829;
-border-color: #282829;
+background-color: #5858e0;
+border-color: #5858e0;
 border-radius: 4px;
 transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
- .modal.title{
-
- }
 
 
 
@@ -155,8 +152,8 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
         white-space: nowrap;
         border-radius: 4px;
         height: 44px;
-        background-color: #4a90e2;
-    
+        background-color: #5858e0;
+        
 }
 h6{
     font-size: 24px;
@@ -170,4 +167,20 @@ h6{
 }
 .hi{
     margin-top: 100px;
+}
+.add-column{
+    text-align: right;
+    margin-bottom: 2px;
+}
+.uploadbtu{
+    display: contents;
+}
+/* .table .td{
+    padding: 5px 5px 5px 5px;
+} */
+.table td, .table th {
+    padding: 5px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    background-color: white;
 }

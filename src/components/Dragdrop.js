@@ -3,6 +3,7 @@ import {useDropzone} from 'react-dropzone';
 import Dropzone from 'react-dropzone'
 import './Dragdrop.css'
 import csv from 'csv'
+import { Button } from 'react-bootstrap';
 function Basic({columndata}) {
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
@@ -52,7 +53,10 @@ console.log(columndata)
 
       <div {...getRootProps({className: 'dropzone'})}>
         <input {...getInputProps()} />
+        <span className="uploadbtu">
+        <Button >Upload Files</Button>
         <p>You can upload any .csv, .tsv file with any set of columns as long as it has 1 record per row. The next step will allow you to match your spreadsheet columns to the right data points. You'll be able to clean up or remove any corrupted data before finalizing your report.</p>
+      </span>
       </div>
       <aside>
       </aside>

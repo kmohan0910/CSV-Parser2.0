@@ -72,7 +72,9 @@ const Compo=({columndata1})=>{
 
 
         <h2>....or just manually add data here :</h2>
-        
+        <div className="add-column">
+        <input className="add-input" onChange={(e)=>setvalue(e.target.value)}></input>
+         <button className="hello" onClick={handleadd}>Add Column</button></div>
         <Table striped bordered hover>
        <thead>
          <tr>
@@ -108,8 +110,7 @@ const Compo=({columndata1})=>{
         </tbody>
 
          </Table>
-         <input className="add-input" onChange={(e)=>setvalue(e.target.value)}></input>
-         <button  class="hello" onClick={handleadd}>Add Column</button>
+         
            </Modal.Body>
      <Modal.Footer>
        {/* <Button variant="secondary" onClick={handleClose}>
