@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import Dropzone from "react-dropzone";
@@ -6,14 +5,6 @@ import "./Dragdrop.css";
 import csv from "csv";
 import { Button } from "react-bootstrap";
 function Basic({ columndata, userList }) {
-=======
-import React, {useCallback} from 'react';
-import {useDropzone} from 'react-dropzone';
-import Dropzone from 'react-dropzone'
-import './Dragdrop.css'
-import csv from 'csv'
-function Basic({columndata}) {
->>>>>>> parent of dc1d501... css changes
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
       const reader = new FileReader();
