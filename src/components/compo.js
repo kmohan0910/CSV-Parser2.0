@@ -138,6 +138,7 @@ const Compo = ({ columndata1 }) => {
             <aside></aside>
           </section>
 
+<<<<<<< HEAD
           {/* Manual Data entry */}
           <h2>....or just manually add data here :</h2>
           <div className="add-column">
@@ -177,6 +178,17 @@ const Compo = ({ columndata1 }) => {
                     })}
                   </tr>
                 );
+=======
+        <h2>....or just manually add data here :</h2>
+        
+        <Table striped bordered hover>
+       <thead>
+         <tr>
+         {/* <th>SNo</th> */}
+              {columndata.map((attr,index)=>{
+                return(<th>{columndata[index]}</th>)
+             
+>>>>>>> parent of dc1d501... css changes
               })}
             </tbody>
           </Table>
@@ -228,6 +240,7 @@ const Compo = ({ columndata1 }) => {
                                 }}
                               />
 
+<<<<<<< HEAD
                               <datalist id="columns">
                                 {match.map((attr, index) => {
                                   return <option value={attr} />;
@@ -372,6 +385,23 @@ const Compo = ({ columndata1 }) => {
               {console.log(array1)}
             </tbody>
           </Table>
+=======
+         </Table>
+         <input className="add-input" onChange={(e)=>setvalue(e.target.value)}></input>
+         <button  class="hello" onClick={handleadd}>Add Column</button>
+           </Modal.Body>
+     <Modal.Footer>
+       {/* <Button variant="secondary" onClick={handleClose}>
+         Close
+       </Button> */}
+       <Button variant="primary" onClick={handleClose}>
+         Proceed
+       </Button>
+     </Modal.Footer>
+   </Modal>
+         </div>
+    )
+>>>>>>> parent of dc1d501... css changes
 
           {console.log(array1[0].length)}
         </Modal.Body>
