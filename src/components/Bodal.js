@@ -13,7 +13,6 @@ const Bodal = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-<<<<<<< HEAD
   const [inputfield, setinput] = useState([0, 1, 2, 3]);
   const tablecoloums = [0, 1, 2];
   const [columndata, handladd] = useState(["Email", "FirstName", "Last Name"]);
@@ -28,26 +27,6 @@ const Bodal = () => {
   let lastname = [];
   let email = [];
   const [noofcol, setcol] = useState([0, 1, 2]);
-=======
-  const [inputfield,setinput]=useState([0,1,2,3])
-  const tablecoloums=[0,1,2]
-  const [columndata,handladd]=useState(["FirstName","Last Name","Email"])
-  const [value,setvalue]=useState("")
-  let firstname=[]
-  const array1={
-    0:[],
-    1:[],
-    2:[],
-    3:[]
-  }
-  let lastname=[]
-  let email=[]
-  const [noofcol,setcol]=useState([0,1,2])
-
-const setinput1=(myvalue,index,index1)=>{
-array1[index].splice(index1,1,myvalue)
- console.log(array1)
->>>>>>> parent of dc1d501... css changes
 
   const setinput1 = (myvalue, index, index1) => {
     array1[index].splice(index1, 1, myvalue);

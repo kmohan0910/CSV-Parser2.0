@@ -60,7 +60,6 @@ function Basic({columndata}) {
     <section className="container">
       <div {...getRootProps({ className: "dropzone" })}>
         <input {...getInputProps()} />
-<<<<<<< HEAD
         <span className="uploadbtu">
           <Button>Upload Files</Button>
           <p>
@@ -70,9 +69,6 @@ function Basic({columndata}) {
             clean up or remove any corrupted data before finalizing your report.
           </p>
         </span>
-=======
-        <p>You can upload any .csv, .tsv file with any set of columns as long as it has 1 record per row. The next step will allow you to match your spreadsheet columns to the right data points. You'll be able to clean up or remove any corrupted data before finalizing your report.</p>
->>>>>>> parent of dc1d501... css changes
       </div>
       <aside></aside>
     </section>
