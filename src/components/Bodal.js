@@ -12,7 +12,7 @@ const Bodal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(!show);
   const [inputfield, setinput] = useState([0, 1, 2, 3]);
   const tablecoloums = [0, 1, 2];
   const [columndata, handladd] = useState(["Email", "FirstName", "Last Name"]);

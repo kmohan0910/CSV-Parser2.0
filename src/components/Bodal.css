@@ -104,9 +104,6 @@ h2 {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
- .modal.title{
-
- }
 
 .table th {
   padding: 0px;
@@ -152,6 +149,7 @@ h2 {
   border-radius: 4px;
   height: 44px;
   background-color: #5858e0;
+  margin: 2px;
 }
 h6 {
   font-size: 24px;
@@ -258,6 +256,17 @@ td.modal2 {
   background-color: #60b700;
   color: white;
   border: 1px solid #c3c3c3;
+
+  border-radius: 4px;
+}
+.comfirm-button2 {
+  font-size: 12px;
+  margin-right: 16px;
+  padding: 5px 1em;
+  height: auto;
+  background-color: #5858e0;
+  color: white;
+  border: 1px solid #5858e0;
 
   border-radius: 4px;
 }
